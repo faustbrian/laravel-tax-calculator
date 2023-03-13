@@ -21,7 +21,7 @@ final class Money
 
     public function __construct($amount, string $currency, string $language)
     {
-        $this->money    = new MoneyPhp($amount, new Currency($currency));
+        $this->money = new MoneyPhp($amount, new Currency($currency));
         $this->currency = $currency;
         $this->language = $language;
     }
@@ -34,7 +34,7 @@ final class Money
     public function format(): string
     {
         $numberFormatter = new NumberFormatter($this->language, NumberFormatter::CURRENCY);
-        $moneyFormatter  = new IntlMoneyFormatter($numberFormatter, new ISOCurrencies);
+        $moneyFormatter = new IntlMoneyFormatter($numberFormatter, new ISOCurrencies);
 
         return $moneyFormatter->format($this->money);
     }
