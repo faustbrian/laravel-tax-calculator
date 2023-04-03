@@ -1,53 +1,45 @@
-# Laravel Tax Calculator
+<p align="center">
+    <a href="https://preem.studio" target="_blank">
+        <img src="https://raw.githubusercontent.com/PreemStudio/assets/main/logo-text.svg" width="400" alt="Preem Studio Logo" />
+    </a>
+</p>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/preemstudio/laravel-tax-calculator.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-tax-calculator)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-tax-calculator/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/preemstudio/laravel-tax-calculator/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-tax-calculator/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/preemstudio/laravel-tax-calculator/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/preemstudio/laravel-tax-calculator.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-tax-calculator)
+<p align="center">
+    <a href="https://github.com/PreemStudio/laravel-tax-calculator/actions">
+        <img src="https://badge.sh/github/check-runs/PreemStudio/laravel-tax-calculator" alt="Checks" />
+    </a>
+    <a href="https://packagist.org/packages/preemstudio/laravel-tax-calculator">
+        <img src="https://badge.sh/packagist/downloads/PreemStudio/laravel-tax-calculator" alt="Downloads" />
+    </a>
+    <a href="https://packagist.org/packages/preemstudio/laravel-tax-calculator">
+        <img src="https://badge.sh/packagist/version/PreemStudio/laravel-tax-calculator" alt="Version" />
+    </a>
+    <a href="https://packagist.org/packages/preemstudio/laravel-tax-calculator">
+        <img src="https://badge.sh/packagist/license/PreemStudio/laravel-tax-calculator" alt="License" />
+    </a>
+</p>
 
-A package to easily calculate sales taxes with Laravel.
+## About Laravel Tax Calculator
+
+This project was created by, and is maintained by [Preem Studio](https://github.com/PreemStudio), and is a package to easily calculate sales taxes with [Laravel](https://laravel.com/). Be sure to browse through the [changelog](CHANGELOG.md), [code of conduct](.github/CODE_OF_CONDUCT.md), [contribution guidelines](.github/CONTRIBUTING.md), [license](LICENSE), and [security policy](.github/SECURITY.md).
 
 ## Installation
 
-You can install the package via composer:
+> **Note**
+> This package requires [PHP](https://www.php.net/) 8.2 or later, and it supports [Laravel](https://laravel.com/) 10 or later.
+
+To get the latest version, simply require the project using [Composer](https://getcomposer.org/):
 
 ```bash
-composer require preemstudio/laravel-tax-calculator
+$ composer require preemstudio/laravel-tax-calculator
 ```
 
-You can publish the config file with:
+You can publish the configuration file by using:
 
 ```bash
-php artisan vendor:publish --tag="laravel-tax-calculator-config"
+$ php artisan vendor:publish --tag="laravel-tax-calculator-config"
 ```
 
 ## Usage
 
-Check our [test suite](/tests) for usage examples.
-
-## Testing
-
-```bash
-composer test
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-If you've found a bug regarding security please mail [security@preem.studio](mailto:security@preem.studio) instead of using the issue tracker.
-
-## Credits
-
-- [Preem Studio](https://github.com/PreemStudio)
-- [All Contributors](../../contributors)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+Please review the contents of [our test suite](/tests) for detailed usage examples.
