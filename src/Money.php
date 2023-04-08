@@ -26,21 +26,21 @@ final class Money
         $this->language = $language;
     }
 
+    public function __call(string $method, array $arguments)
+    {
+        return \call_user_func_array([$this->money, $method], $arguments);
+    }
+
     public function decimal(): float
     {
-        return (float) (new DecimalMoneyFormatter(new ISOCurrencies))->format($this->money);
+        return (float) (new DecimalMoneyFormatter(new ISOCurrencies()))->format($this->money);
     }
 
     public function format(): string
     {
         $numberFormatter = new NumberFormatter($this->language, NumberFormatter::CURRENCY);
-        $moneyFormatter = new IntlMoneyFormatter($numberFormatter, new ISOCurrencies);
+        $moneyFormatter = new IntlMoneyFormatter($numberFormatter, new ISOCurrencies());
 
         return $moneyFormatter->format($this->money);
-    }
-
-    public function __call(string $method, array $arguments)
-    {
-        return call_user_func_array([$this->money, $method], $arguments);
     }
 }
