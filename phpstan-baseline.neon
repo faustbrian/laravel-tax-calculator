@@ -1,0 +1,46 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\TaxCalculator\\\\Money\\:\\:getAmount\\(\\)\\.$#"
+			count: 6
+			path: src/Calculator.php
+
+		-
+			message: "#^Method BombenProdukt\\\\TaxCalculator\\\\Money\\:\\:__call\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Money.php
+
+		-
+			message: "#^Method BombenProdukt\\\\TaxCalculator\\\\Money\\:\\:__construct\\(\\) has parameter \\$amount with no type specified\\.$#"
+			count: 1
+			path: src/Money.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of function call_user_func_array expects callable\\(\\)\\: mixed, array\\{mixed, string\\} given\\.$#"
+			count: 1
+			path: src/Money.php
+
+		-
+			message: "#^Parameter \\#1 \\$code of class Money\\\\Currency constructor expects non\\-empty\\-string, string given\\.$#"
+			count: 1
+			path: src/Money.php
+
+		-
+			message: "#^Property BombenProdukt\\\\TaxCalculator\\\\Money\\:\\:\\$currency has no type specified\\.$#"
+			count: 1
+			path: src/Money.php
+
+		-
+			message: "#^Property BombenProdukt\\\\TaxCalculator\\\\Money\\:\\:\\$currency is never read, only written\\.$#"
+			count: 1
+			path: src/Money.php
+
+		-
+			message: "#^Property BombenProdukt\\\\TaxCalculator\\\\Money\\:\\:\\$language has no type specified\\.$#"
+			count: 1
+			path: src/Money.php
+
+		-
+			message: "#^Property BombenProdukt\\\\TaxCalculator\\\\Money\\:\\:\\$money has no type specified\\.$#"
+			count: 1
+			path: src/Money.php
