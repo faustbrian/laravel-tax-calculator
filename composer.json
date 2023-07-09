@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/laravel-tax-calculator",
+    "homepage": "https://github.com/faustbrian/laravel-tax-calculator",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
